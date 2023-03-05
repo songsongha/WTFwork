@@ -77,7 +77,7 @@ post '/scrape' do
 
             pool.process do
                 scraper = Scraper.new(url)
-                job_title =  scraper.search(".heading-info").strip
+                job_title =  scraper.search(".heading-info").strip.slice! " in Canada"
                 if job_title.present? 
                     wage_string = scraper.search("#j_id_3d_2_27 .section-value").strip
                     wage = wage_string.tr("$,/a-z ","").to_f
