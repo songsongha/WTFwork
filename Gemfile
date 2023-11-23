@@ -16,6 +16,7 @@ gem 'tux'
 gem 'mechanize'
 gem 'bcrypt'
 gem 'pry'
+gem 'middleman'
 
 group :development, :test do
     gem 'shotgun'
