@@ -12,7 +12,7 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'sinatra-activerecord'
 
-gem 'puma'
+gem 'puma', '5.0.4'
 gem 'tux'
 gem 'mechanize'
 gem 'bcrypt'
